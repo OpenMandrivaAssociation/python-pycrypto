@@ -3,7 +3,7 @@
 Summary:	Python interface to various crypto algorithms and protocols
 Name:		python-%{oname}
 Version:	2.0.1
-Release:	%mkrel 4
+Release:	%mkrel 5
 Source0:	http://www.amk.ca/files/python/crypto/%{oname}-%{version}.tar.gz
 Source1:	http://www.amk.ca/files/python/crypto/%{oname}-%{version}.sig
 Patch0:		pycrypto-1.9a6-64bit.patch
