@@ -19,8 +19,7 @@ Provides:	pycrypto = %{version}-%{release}
 
 %description
 The Toolkit is a collection of cryptographic algorithms and protocols,
-implemented for use from Python. The current release is 1.9alpha6. Among
-the contents of the package:
+implemented for use from Python. Among the contents of the package:
 
  * Hash functions: MD2, MD4, RIPEMD.
  * Block encryption algorithms: AES, ARC2, Blowfish, CAST, DES, Triple-
