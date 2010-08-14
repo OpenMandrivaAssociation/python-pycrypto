@@ -2,7 +2,7 @@
 
 Summary:	Python interface to various crypto algorithms and protocols
 Name:		python-%{oname}
-Version:	2.1.0
+Version:	2.2
 Release:	%mkrel 1
 Source0:	http://ftp.dlitz.net/pub/dlitz/crypto/pycrypto/%{oname}-%{version}.tar.gz
 Source1:	http://ftp.dlitz.net/pub/dlitz/crypto/pycrypto/%{oname}-%{version}.tar.gz.asc
