@@ -6,8 +6,7 @@ Version:	2.6
 Release:	1
 Source0:	http://ftp.dlitz.net/pub/dlitz/crypto/pycrypto/%{oname}-%{version}.tar.gz
 Source1:	http://ftp.dlitz.net/pub/dlitz/crypto/pycrypto/%{oname}-%{version}.tar.gz.asc
-Patch0:		pycrypto-2.1.0-64bit.patch
-Patch1:		pycrypto-2.3-link.patch
+Patch1:		pycrypto-2.6-link.patch
 License:	Public Domain
 Group:		Development/Python
 URL:		http://www.pycrypto.org
@@ -34,7 +33,6 @@ implemented for use from Python. Among the contents of the package:
 
 %prep
 %setup -q -n %{oname}-%{version}
-%patch0 -p0 -b .64bit
 %patch1 -p0 -b .link
 
 perl -pi -e 's|/usr/local/bin/|%{_bindir}/|' Util/RFC1751.py 
