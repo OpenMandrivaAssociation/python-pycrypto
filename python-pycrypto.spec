@@ -13,7 +13,6 @@ URL:		http://www.pycrypto.org
 BuildRequires:	python-devel >= 2.2
 BuildRequires:	gmp-devel
 Requires:	python >= 2.2
-BuildRoot:	%{_tmppath}/%{oname}-%{version}-%{release}-buildroot
 Obsoletes:	pycrypto =< %{version}-%{release}
 Provides:	pycrypto = %{version}-%{release}
 
@@ -38,17 +37,13 @@ implemented for use from Python. Among the contents of the package:
 perl -pi -e 's|/usr/local/bin/|%{_bindir}/|' Util/RFC1751.py 
 
 %build
+%setup_compile_flags
 CFLAGS="%{optflags}" python setup.py build
 
 %install
-rm -rf %{buildroot}
 python setup.py install --root=%{buildroot} --compile --optimize=2
 
-%clean
-rm -rf %{buildroot}
-
 %files
-%defattr(-,root,root)
 %doc ChangeLog README COPYRIGHT TODO
 %{py_platsitedir}/*
 
