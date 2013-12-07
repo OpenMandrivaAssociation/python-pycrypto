@@ -3,7 +3,7 @@
 Summary:	Python interface to various crypto algorithms and protocols
 Name:		python-%{oname}
 Version:	2.6
-Release:	4
+Release:	5
 License:	Public Domain
 Group:		Development/Python
 Url:		http://www.pycrypto.org
