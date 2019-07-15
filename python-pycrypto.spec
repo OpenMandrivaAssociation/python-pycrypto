@@ -11,8 +11,8 @@ Source0:	http://ftp.dlitz.net/pub/dlitz/crypto/pycrypto/%{oname}-%{version}.tar.
 Source1:	http://ftp.dlitz.net/pub/dlitz/crypto/pycrypto/%{oname}-%{version}.tar.gz.asc
 Patch1:		pycrypto-2.6-link.patch
 BuildRequires:	gmp-devel
-BuildRequires:	pkgconfig(python)
 BuildRequires:	pkgconfig(python3)
+BuildRequires:	pkgconfig(python2)
 Requires:	python >= 3.0
 Provides:	pycrypto = %{version}-%{release}
 
