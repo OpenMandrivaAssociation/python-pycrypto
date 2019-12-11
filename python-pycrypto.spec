@@ -1,4 +1,5 @@
 %define oname	pycrypto
+%global _disable_ld_no_undefined 1
 
 Summary:	Python interface to various crypto algorithms and protocols
 Name:		python-%{oname}
